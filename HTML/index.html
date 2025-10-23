@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHL GoalZone</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+
+<body>
+    <div id="top-bar">
+        <div id="container">
+            <p id="GoalZone" class="nav-items"><a href="../HTML/index.html">GoalZone</a></p>
+            <div id="search-container">
+                <input type="Search" id="SearchBar" placeholder="Search players" aria-label="Search input">
+                <div id="player-results"></div>
+            </div>          
+            <p class="nav-items"><a href="../HTML/statistics.html">Statistics</a></p>
+            <p class="nav-items"><a href="../HTML/standings.html">Standings</a></p>
+            <p class="nav-items"><a href="../HTML/index.html">Results</a></p>
+            <p class="nav-items"><a href="../HTML/teams.html">Teams</a></p>
+            <p class="nav-items"><a href="../HTML/about.html">About</a></p>
+            <p class="nav-items"><a href="../HTML/settings.html">Settings</a></p>
+        </div>
+    </div>
+    <div>
+        <div class="date-selector">
+            <button class="button" id="previous-day">&#x21a9;</button>
+            <button id="datepicker">
+                <p id="current-date">Click here to pick a date</p>
+            </button>
+            <button class="button" id="next-day">&#x21aa;</button>
+        </div>
+        <div class="fixtures">
+        </div>
+        <div class="datepicker-container">
+
+            <div class="datepicker" hidden>
+
+
+                <!-- .datepicker-header -->
+                <div class="datepicker-header">
+                    <button class="prev">Prev</button>
+
+                    <div>
+                        <select class="month-input">.
+                            <option>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option>December</option>
+
+                        </select>
+                        <input type="number" class="year-input" />
+                    </div>
+
+                    <button class="next">Next</button>
+
+                </div>
+                <!-- .datepicker-header -->
+
+                <!-- .days -->
+                <div class="days">
+                    <span>Sun</span>
+                    <span>Mon</span>
+                    <span>Tue</span>
+                    <span>Wed</span>
+                    <span>Thu</span>
+                    <span>Fri</span>
+                    <span>Sat</span>
+                </div>
+                <!-- .days -->
+
+                <!-- .dates -->
+                <div class="dates">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button>10</button>
+                    <button>11</button>
+                    <button>12</button>
+                    <button>13</button>
+                    <button>14</button>
+                    <button>15</button>
+                    <button>16</button>
+                    <button>17</button>
+                    <button>18</button>
+                    <button>19</button>
+                    <button>20</button>
+                    <button>21</button>
+                    <button>22</button>
+                    <button>23</button>
+                    <button>24</button>
+                    <button>25</button>
+                    <button>26</button>
+                    <button>27</button>
+                    <button>28</button>
+                    <button>29</button>
+                    <button>30</button>
+                </div>
+                <!-- .dates -->
+
+                <div class="datepicker-footer">
+                    <button class="cancel">cancel</button>
+                    <button class="apply">Apply</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="search-results">        
+            <div class="bio">
+            </div>
+        </div>
+        <footer><span>Copyright © 2024 GoalZone. All rights reserved.</span></footer>
+        <script src="../JS/main.js"></script>
+        <script src="../JS/score.js" defer></script>
+</body>
+
+</html>
